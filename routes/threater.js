@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 });
 
 
-router.get('/threaterlist', auth , async function(req, res, next) {
+router.get('/threaterlist' , async function(req, res, next) {
     console.log(req.body,"ioio");
     
    const movies = await threaterlist.find() 
